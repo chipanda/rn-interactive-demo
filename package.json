@@ -15,12 +15,14 @@
   "dependencies": {
     "@expo/samples": "2.1.1",
     "expo": "30.0.0",
+    "prop-types": "^15.6.2",
     "react": "16.3.1",
     "react-native": "https://github.com/expo/react-native/archive/sdk-30.0.0.tar.gz",
     "react-navigation": "^2.9.3",
     "whatwg-fetch": "^2.0.4"
   },
   "devDependencies": {
+    "babel-eslint": "^9.0.0",
     "eslint": "^5.5.0",
     "eslint-config-airbnb": "^17.1.0",
     "eslint-plugin-import": "^2.14.0",
