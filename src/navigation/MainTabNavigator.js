@@ -7,6 +7,7 @@ import HomeScreen from '../screens/HomeScreen';
 import DemosScreen from '../screens/DemosScreen';
 import SettingsScreen from '../screens/SettingsScreen';
 import MaxWidthScreen from '../screens/MaxWidthScreen';
+import Colors from '../constants/Colors';
 
 const HomeStack = createStackNavigator({
   Home: HomeScreen,
@@ -57,4 +58,8 @@ export default createBottomTabNavigator({
   HomeStack,
   DemosStack,
   SettingsStack,
+}, {
+  tabBarOptions: {
+    activeTintColor: Colors.color5,
+  },
 });

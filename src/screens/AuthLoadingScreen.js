@@ -7,6 +7,7 @@ import {
   View,
   Text,
 } from 'react-native';
+import Colors from '../constants/Colors';
 
 export default class AuthLoadingScreen extends React.Component {
   constructor(props) {
@@ -37,7 +38,7 @@ const styles = StyleSheet.create({
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
-    backgroundColor: '#F29F3F',
+    backgroundColor: Colors.color1,
   },
   text: {
     marginBottom: 10,
