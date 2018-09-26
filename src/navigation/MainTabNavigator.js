@@ -2,12 +2,13 @@ import React from 'react';
 import { Platform } from 'react-native';
 import { createStackNavigator, createBottomTabNavigator } from 'react-navigation';
 
+import Colors from '../constants/Colors';
 import TabBarIcon from '../components/TabBarIcon';
 import HomeScreen from '../screens/HomeScreen';
 import DemosScreen from '../screens/DemosScreen';
 import SettingsScreen from '../screens/SettingsScreen';
 import MaxWidthScreen from '../screens/MaxWidthScreen';
-import Colors from '../constants/Colors';
+import HeaderRightWithThisScreen from '../screens/HeaderRightWithThisScreen';
 
 const HomeStack = createStackNavigator({
   Home: HomeScreen,
@@ -28,6 +29,7 @@ HomeStack.navigationOptions = {
 const DemosStack = createStackNavigator({
   Demos: DemosScreen,
   MaxWidth: MaxWidthScreen,
+  HeaderRightWithThis: HeaderRightWithThisScreen,
 });
 
 DemosStack.navigationOptions = {

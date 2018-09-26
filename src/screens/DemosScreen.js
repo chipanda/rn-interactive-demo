@@ -5,6 +5,7 @@ import {
   FlatList,
   Text,
 } from 'react-native';
+import Colors from '../constants/Colors';
 
 export default class DemosScreen extends React.Component {
   static navigationOptions = {
@@ -17,6 +18,9 @@ export default class DemosScreen extends React.Component {
       data: [{
         page: 'MaxWidth',
         name: 'MaxWidth',
+      }, {
+        page: 'HeaderRightWithThis',
+        name: 'HeaderRightWithThis',
       }],
     };
   }
@@ -60,6 +64,5 @@ const styles = StyleSheet.create({
   },
   itemText: {
     fontSize: 16,
-    color: '#999',
   },
 });
